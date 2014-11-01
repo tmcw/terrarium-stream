@@ -1,8 +1,8 @@
 {
   "name": "terrarium-stream",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "a stream-based wrapper for Terrarium",
-  "main": "index.js",
+  "main": "terrarium_stream.js",
   "scripts": {
     "test": "watchify test.js -o bundle.js & serve"
   },
