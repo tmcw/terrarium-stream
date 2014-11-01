@@ -1,0 +1,30 @@
+{
+  "name": "terrarium-stream",
+  "version": "1.0.0",
+  "description": "a stream-based wrapper for Terrarium",
+  "main": "index.js",
+  "scripts": {
+    "test": "watchify test.js -o bundle.js & serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tmcw/terrarium-stream.git"
+  },
+  "keywords": [
+    "terrarium",
+    "stream"
+  ],
+  "author": "Tom MacWright",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tmcw/terrarium-stream/issues"
+  },
+  "homepage": "https://github.com/tmcw/terrarium-stream",
+  "devDependencies": {
+    "tape": "^3.0.1",
+    "watchify": "^2.1.0"
+  },
+  "dependencies": {
+    "through": "^2.3.6"
+  }
+}
