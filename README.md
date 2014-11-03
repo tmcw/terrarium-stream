@@ -6,3 +6,11 @@ Send it JavaScript code with instrumentation hints (`//=value`) and it sends you
 are ready. Automatically it destroys and creates sandboxes to fix the problem of runaway `setInterval` usage.
 
 Like Terrarium, it provides browser and node contexts, and exposes them under `.Node` and `.Browser`
+
+## Examples
+
+With a shoe stream, evaluating code on a server:
+
+```js
+stream.pipe(terrariumStream()).pipe(stream);
+```
