@@ -25,6 +25,7 @@
     "watchify": "^2.1.0"
   },
   "dependencies": {
+    "terrarium": "2.0.0",
     "through": "^2.3.6"
   }
 }
