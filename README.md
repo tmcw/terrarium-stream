@@ -12,5 +12,12 @@ Like Terrarium, it provides browser and node contexts, and exposes them under `.
 With a shoe stream, evaluating code on a server:
 
 ```js
-stream.pipe(terrariumStream()).pipe(stream);
+stream.pipe(terrariumStream.Browser()).pipe(stream);
 ```
+
+## Behavior
+
+* when the stream is created, it creates a process
+* you write code to the process
+* the stream emits data when that code, running in a sandbox, produces output
+* destroying the stream kills the sandbox
