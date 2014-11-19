@@ -35,7 +35,9 @@ function TerrariumStreamNode() {
     t.on('err', function(d) {
       this.emit('err', d);
     }.bind(this));
-
+    t.on('end', function(d) {
+      this.emit('end');
+    }.bind(this));
 
     t.run(data.value);
   }, function(end) {
